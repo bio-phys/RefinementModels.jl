@@ -1,4 +1,4 @@
-name = "BioEnModels"
+name = "RefinementModels"
 uuid = "7320cc80-469f-4f6c-875a-d6a0968e5e79"
 authors = ["jkoefinger <juergen.koefinger@biophys.mpg.de>"]
 version = "0.1.0"
