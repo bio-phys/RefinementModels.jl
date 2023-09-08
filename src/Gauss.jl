@@ -7,10 +7,10 @@ function experimental(m; mu=0., sigma=1.) # default parameters from jctc 2019
     return y
 end
 
-function theoretical(n, y; sigma=2., offset=1.) # default parameters from jctc 2019
-    y = randn((n, size(y,1)))
+function theoretical(n, Y; sigma=2., offset=1.) # default parameters from jctc 2019
+    y = randn((n, size(Y,1)))
     for alpha in axes(y,1)
-        y[alpha,:] .=  y[alpha,:].*sigma .+ y .+ offset
+        y[alpha,:] .=  y[alpha,:].*sigma .+ Y .+ offset
     end
     return y
 end
