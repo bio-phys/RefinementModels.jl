@@ -129,4 +129,4 @@ end
 #     end
 # end 
     
-end # end module DoubleWell
+end # end module Quartic
