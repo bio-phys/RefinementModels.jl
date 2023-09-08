@@ -1,6 +1,6 @@
 module Gauss 
 
-using random
+using Random
 
 function experimental(m; mu=0., sigma=1.) # default parameters from jctc 2019
     y = randn(m).*sigma .+ mu
