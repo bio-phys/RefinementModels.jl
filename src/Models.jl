@@ -2,15 +2,15 @@ module Gauss
 
 using Random
 
-function experimental(M; mu=0., sigma=1.) # default parameters from JCTC 2019
-    y = randn(M).*sigma .+ mu
+function experimental(m; mu=0., sigma=1.) # default parameters from jctc 2019
+    y = randn(m).*sigma .+ mu
     return y
 end
 
-function theoretical(N, Y; sigma=2., offset=1.) # default parameters from JCTC 2019
-    y = randn((N, size(Y,1)))
+function theoretical(n, y; sigma=2., offset=1.) # default parameters from jctc 2019
+    y = randn((n, size(y,1)))
     for alpha in axes(y,1)
-        y[alpha,:] .=  y[alpha,:].*sigma .+ Y .+ offset
+        y[alpha,:] .=  y[alpha,:].*sigma .+ y .+ offset
     end
     return y
 end
