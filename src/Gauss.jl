@@ -3,8 +3,8 @@ module Gauss
 using Random
 
 function experimental(m; mu=0., sigma=1.) # default parameters from jctc 2019
-    y = randn(m).*sigma .+ mu
-    return y
+    Y = randn(m).*sigma .+ mu
+    return Y
 end
 
 function theoretical(n, Y; sigma=2., offset=1.) # default parameters from jctc 2019
