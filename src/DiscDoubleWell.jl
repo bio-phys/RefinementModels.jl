@@ -1,4 +1,4 @@
-module DoubleWell
+module DiscDoubleWell
 
 import StatsBase
 

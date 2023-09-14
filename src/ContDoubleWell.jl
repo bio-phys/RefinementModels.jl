@@ -1,4 +1,4 @@
-module Quartic
+module ContDoubleWell
 
 import StatsBase
 import SpecialFunctions: besseli
@@ -73,10 +73,10 @@ function mean_from_distribution(grid, p; moment=1)
     return sum(grid.x.^moment.*p).*grid.dx
 end
 
-function sample(N, half_width=1.5, a=3.0, x0=1.0)
+function sample(N; half_width=1.5, a=3.0, x0=1.0)
     x = (2.0*rand(N).-1).*half_width
-    p = Quartic.distribution(x, a, x0)
-    ran = rand(N).*Quartic.distribution_max(a, x0)
+    p = distribution(x, a, x0)
+    ran = rand(N).*distribution_max(a, x0)
     sample = x[p.>ran]
     return sample
 end
@@ -129,4 +129,4 @@ end
 #     end
 # end 
     
-end # end module Quartic
+end # end module ContDoubleWell
