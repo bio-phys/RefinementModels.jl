@@ -1,7 +1,7 @@
 module RefinementModels
 
 include("./Gauss.jl")
-include("./Quartic.jl")
-include("./DoubleWell.jl")
+include("./ContDoubleWell.jl")
+include("./DiscDoubleWell.jl")
 
 end # module RefinementModels
