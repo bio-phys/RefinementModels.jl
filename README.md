@@ -24,5 +24,5 @@ See https://github.com/bio-phys/BioEn for a Python/C implementation and https://
 # References
 
 - [1] Köfinger and Hummer, J. Chem. Phys. 143 (2015) https://aip.scitation.org/doi/10.1063/1.4937786
-- [2] Köfinger et al. J. Chem. Theory and Comput. 15 (2019) https://doi.org/10.1021/acs.jctc.8b01231 
+- [2] Köfinger et al. J. Chem. Theory Comput. 15 (2019) https://doi.org/10.1021/acs.jctc.8b01231 
 - [3] Köfinger and Hummer, Eur. Phys. J. B. 94 (2021) https://doi.org/10.1140/epjb/s10051-021-00234-4
