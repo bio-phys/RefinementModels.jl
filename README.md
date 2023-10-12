@@ -17,7 +17,7 @@ Note that a Python implementation of the von Mises polymer model [3] is availabe
 
 # Usage 
 
-The sub-folder /example/ contains scripts to generate models and save the output for subsequent reweighting with BioEn [1]. 
+The sub-folder /example/ contains scripts to generate models and save the generated data for subsequent reweighting with BioEn [1]. 
 
 See https://github.com/bio-phys/BioEn for a Python/C implementation and https://github.com/bio-phys/BioEn.jl for a Julia implementation of methods to solve the BioEn optimization problem [2]. 
 
